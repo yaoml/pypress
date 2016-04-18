@@ -16,10 +16,10 @@ from werkzeug import parse_date
 
 from flask import Flask, g, session, request, flash, redirect, jsonify, url_for
 
-from flaskext.babel import Babel, gettext as _
-from flaskext.themes import setup_themes
-from flaskext.principal import Principal, RoleNeed, UserNeed, identity_loaded
-from flaskext.uploads import configure_uploads
+from flask.ext.babel import Babel, gettext as _
+from flask.ext.themes import setup_themes
+from flask.ext.principal import Principal, RoleNeed, UserNeed, identity_loaded
+from flask.ext.uploads import configure_uploads
 
 from pypress import views, helpers
 from pypress.models import User, Post, Tag, Link, Comment
